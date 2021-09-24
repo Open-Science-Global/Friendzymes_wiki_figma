@@ -1,0 +1,352 @@
+body {
+  background-color: #3a3a3a;
+  margin: 0;
+}
+
+html {
+  font-size: 80.5%;
+}
+
+.top-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  width: 93.8%;
+  height: 40px;
+  left: 81px;
+  top: 29px;
+  z-index: 1;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 28px;
+  row-gap: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.top-menu .menu-items {
+  width: 255px;
+}
+
+.top-menu .top-project {
+  border-bottom: 5px solid #FF8552;
+}
+
+.top-menu .top-Software {
+  border-bottom: 5px solid #FFEC63;
+}
+
+.top-menu .top-Wetware {
+  border-bottom: 5px solid #32CFD3;
+}
+
+.top-menu .top-Hardware {
+  border-bottom: 5px solid #4F5484;
+}
+
+.top-menu .top-HumanPractices {
+  border-bottom: 5px solid #F8F1EF;
+}
+
+.top-menu .drop-btn {
+  width: 80px;
+  border-bottom: 5px solid #000000;
+  position: relative;
+  z-index: 999999;
+}
+
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  right: 0;
+  background-color: #C3D6CA;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 5%;
+  /* Place content 60px from the top */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav .sidenav-content {
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidenav .sidenav-content a {
+  font-family: Roboto;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #000000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-weight: bold;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.container {
+  position: relative;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400%;
+  height: 75rem;
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.Software.slide {
+  left: 0px;
+  top: 0px;
+  background: #FFEC63;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.description {
+  position: absolute;
+  width: 674px;
+  height: 336px;
+  left: 531px;
+  top: 450px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.title {
+  position: absolute;
+  width: 701px;
+  height: 169px;
+  left: 527px;
+  top: 220px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 144px;
+  line-height: 169px;
+  /* identical to box height */
+  z-index: 1;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.title-box {
+  position: absolute;
+  width: 697px;
+  height: 120px;
+  left: 531px;
+  top: 305px;
+  z-index: 0;
+  background: #F8D900;
+}
+
+.freddie {
+  position: absolute;
+  width: 352px;
+  height: 310px;
+  left: 77px;
+  top: 350px;
+}
+
+.bacteria1 {
+  position: absolute;
+  width: 434.49px;
+  height: 876.78px;
+  left: 10px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 398.816px;
+  -webkit-transform: rotate(-120deg);
+          transform: rotate(-120deg);
+}
+
+.bacteria2 {
+  position: absolute;
+  width: 498.6px;
+  height: 959.45px;
+  left: 800px;
+  top: 500.35px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 461.065px;
+  -webkit-transform: rotate(144.73deg);
+          transform: rotate(144.73deg);
+}
+
+.Wetware.slide {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  background: #32CFD3;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.Wetware.slide .title-box {
+  background: #00F9FF;
+}
+
+.Hardware.slide {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  background: #4F5484;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.Hardware.slide .title-box {
+  background: #232D95;
+}
+
+.Human-Practices.slide {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  background: #F8F1EF;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.Human-Practices.slide .title-box {
+  background: #C4C4C4;
+}
+
+.Human-Practices.slide .title {
+  font-size: 10.9rem;
+  top: 6%;
+}
+
+/*     .navi-box{
+        display: flex;
+        flex-direction: row;
+        //top: 886px;
+        position: absolute;
+        justify-content: space-around;
+        gap: 600px; */
+.next {
+  z-index: 10;
+  font-size: 25px;
+  top: 87%;
+  left: 80%;
+  font-weight: 700;
+  position: absolute;
+  /*           &::after{
+                content: '\f061';
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+                text-decoration: inherit;
+                margin-left:5px;
+                color:red; 
+            }  */
+}
+
+.prev {
+  right: 80%;
+  position: absolute;
+  font-size: 25px;
+  z-index: 10;
+  top: 87%;
+}
+
+.nav-btn {
+  text-align: center;
+  background: #C3D6CA;
+  cursor: pointer;
+  width: 148px;
+  height: 74px;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  /*         .next.nav-btn::after{
+            position: relative;
+            //left: 50px;
+            content: '\f061';
+            //font-size: 50px;
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+            margin-left:5px;
+            color:red; 
+            z-index: 10;
+        }  */
+}
+
+.nav-btn:hover {
+  background: white;
+}
+/*# sourceMappingURL=main_page_styles.css.map */
