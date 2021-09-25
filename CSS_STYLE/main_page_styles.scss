@@ -1,7 +1,5 @@
-
 body{
-    background-color: rgb(58, 58, 58);
-    //margin-top: 100px;
+    background: rgb(58, 58, 58);
     margin: 0;
 }
 html{
@@ -100,57 +98,66 @@ html{
     top: 0; /* Stay at the top */
     right: 0;
     background-color: #C3D6CA;
-    overflow-x: hidden; /* Disable horizontal scroll */
+    //overflow-x:auto; /* Disable horizontal scroll */
     padding-top: 5%; /* Place content 60px from the top */
     transition:  0.5s; /* 0.5 second transition effect to slide in the sidenav */
 
+
     .sidenav-content{
         height: 85%;   
-        display:flex;
+        display:none;
         flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 20px;
+        //justify-content: space-around;
+        //align-items: center;
+        //gap: 20px;
+        .sidenav-item {
+            display: flex;
+            font-family: Roboto;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 1rem;
+            color: #000000;
+            transition:  0.3s;
+            writing-mode: vertical-rl;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-basis: 0;
+            flex-grow: 1;
+            &:hover{
+                background-color: #FF5875;
+            }
+        }
+    }
+}
 
-    div {
-        font-family: Roboto;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: 1rem;
-        color: #000000;
-        transition:  0.3s;
-        writing-mode: vertical-rl;
-        font-weight: bold;
-        cursor: pointer;
-  }
-}
-}
+/* 
 .sidenav div:hover {
     color: #f1f1f1;
-  }
+  } */
 
-.sidenav-subpages{
-    float: left;
-    top: 96px;
 .project-subpages{
-    display: flex;
+    display: none;
+    writing-mode: horizontal-tb;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     z-index: 9999;
     background:#FF5875;
-    width: 436px;
+    width: 600px;
     align-items: center;
-    top: 96px;
-    //left: 65%;
-    //float: left;
-    a{
-        height: 90px;
-    }
-
+    height: 50%;
+    top: 0px;
+    //margin-left: auto;
+    right: 77px;
   }
+
+.sidenav-item:hover{
+    .project-subpages{
+    display: flex;
+    }
 }
-
-
 
 
 
@@ -303,42 +310,23 @@ html{
         }
         
     }
-    
 
-    
-/*     .navi-box{
-        display: flex;
-        flex-direction: row;
-        //top: 886px;
-        position: absolute;
-        justify-content: space-around;
-        gap: 600px; */
-
-        .next{
+    .next{
             z-index: 10;
             font-size: 25px;
             top: 87%;
             left: 80%;
             font-weight: 700;
             position: absolute;
-/*           &::after{
-                content: '\f061';
-                font-family: FontAwesome;
-                font-style: normal;
-                font-weight: normal;
-                text-decoration: inherit;
-                margin-left:5px;
-                color:red; 
-            }  */
         }
-        .prev{
+    .prev{
             right: 80%;
             position: absolute;
             font-size: 25px;
             z-index: 10;
             top: 87%;
         }
-        .nav-btn{
+    .nav-btn{
             //position: relative;
             text-align: center;
             background: #C3D6CA;
@@ -360,19 +348,5 @@ html{
             &:hover{
                 background: white;
             }
-        
-/*         .next.nav-btn::after{
-            position: relative;
-            //left: 50px;
-            content: '\f061';
-            //font-size: 50px;
-            font-family: FontAwesome;
-            font-style: normal;
-            font-weight: normal;
-            text-decoration: inherit;
-            margin-left:5px;
-            color:red; 
-            z-index: 10;
-        }  */
     
     }

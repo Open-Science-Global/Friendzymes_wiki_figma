@@ -7,9 +7,6 @@ const trail = document.querySelectorAll(".menu-items")
 let value = 0
 // trail index number
 let trailValue = 0
-// interval (Duration)
-let interval = 4000
-
 
 document.querySelectorAll(".nav-btn").forEach(cur => {
     // Assign function based on the class Name("next" and "prev")
@@ -18,44 +15,28 @@ document.querySelectorAll(".nav-btn").forEach(cur => {
 
 // Function to slide forward
 const slide = (condition) => {
-    // CLear interval
-    //clearInterval(start)
     // update value and trailValue
     condition === "increase" ? initiateINC() : initiateDEC()
     // move slide
     move(value, trailValue)
-    // Restart Animation
-    //animate()
-    // start interal for slides back 
-    //start = setInterval(() => slide("increase"), interval);
 }
 
 // function for increase(forward, next) configuration
 const initiateINC = () => {
-    // Remove active from all trails
-    //trail.forEach(cur => cur.classList.remove("active"))
-    // increase transform value
     value === 75 ? value = 0 : value += 25
-    // update trailValue based on value
-    //trailUpdate()
+
 }
 
 // function for decrease(backward, previous) configuration
 const initiateDEC = () => {
-     // Remove active from all trails
-    //trail.forEach(cur => cur.classList.remove("active"))
-    // decrease transform value
     value === 0 ? value = 75 : value -= 25
-     // update trailValue based on value
-    //trailUpdate()
+
 }
 
 // function to transform slide 
 const move = (S, T) => {
     // transform slider
     slider.style.transform = `translateX(-${S}%)`
-    //add active class to the current trail
-    //trail[T].classList.add("active")
 }
 
 // function to slide when trail is clicked
@@ -79,44 +60,31 @@ const clickCheck = (e) => {
     }  else {
         value = 75
     }
-    // update trail based on value
-    //trailUpdate()
-    // transfrom slide
     move(value, trailValue)
-    // start animation
-    //animate()
-    // start interval
-    //start = setInterval(() => slide("increase"), interval)
+
 }
 trail.forEach(cur => cur.addEventListener("click", (ev) => clickCheck(ev)))
 
-
-//**Side Menu */
-/* function openNav() {
-    document.getElementById("mySidenav").style.width = "77px";
-  }
-  
-  /* Set the width of the side navigation to 0 */
-/*   function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }  */
-
+//Open and Closing side navigation menu
 function open_close_nav(){
+    //When open or closed, change width and animate hamburguer menu
     if (document.querySelector(".sidenav").style.width === "0px"){
-
+        //hamburger animation
         document.querySelector(".top").style.transform = ("rotate(39.55deg)")
         document.querySelector(".middle").style.opacity = "0"
         document.querySelector(".bottom").style.transform = ("rotate(-38deg)")
-
+        //side menu width
         document.querySelector(".sidenav").style.width = "77px"
-
+        document.querySelector(".sidenav-content").style.display = "flex"
     }
     else{
-        document.querySelector(".sidenav").style.width = "0px"
-
+        //hamburger animation
         document.querySelector(".top").style.transform = ("rotate(0deg)")
         document.querySelector(".middle").style.opacity = "100"
         document.querySelector(".bottom").style.transform = ("rotate(0deg)")
+        //side menu width
+        document.querySelector(".sidenav").style.width = "0px"
+        document.querySelector(".sidenav-content").style.display = "none"
     }
 }
 
