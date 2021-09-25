@@ -103,12 +103,22 @@ trail.forEach(cur => cur.addEventListener("click", (ev) => clickCheck(ev)))
 
 function open_close_nav(){
     if (document.querySelector(".sidenav").style.width === "0px"){
+
+        document.querySelector(".top").style.transform = ("rotate(39.55deg)")
+        document.querySelector(".middle").style.opacity = "0"
+        document.querySelector(".bottom").style.transform = ("rotate(-38deg)")
+
         document.querySelector(".sidenav").style.width = "77px"
+
     }
     else{
         document.querySelector(".sidenav").style.width = "0px"
+
+        document.querySelector(".top").style.transform = ("rotate(0deg)")
+        document.querySelector(".middle").style.opacity = "100"
+        document.querySelector(".bottom").style.transform = ("rotate(0deg)")
     }
 }
 
-
-document.querySelector(".drop-btn").onclick = open_close_nav;
+document.querySelector(".sidenav").style.width = "0px"
+document.querySelector(".hamburger-menu").onclick = open_close_nav;

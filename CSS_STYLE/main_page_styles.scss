@@ -56,6 +56,41 @@ html{
     }
 }
 
+//hamburger-menu
+.hamburger-menu {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 2rem;
+    width: 2.3rem;
+    cursor: pointer;
+    left: 96%;
+    top: 29px; 
+    position:absolute;
+    z-index:1000;
+    .top {
+        transform: rotate(0deg);
+        }
+      
+      .middle {
+        opacity: 100%;
+        }
+      
+      .bottom {
+        transform: rotate(0deg);
+        }
+  .bar {
+    height: 4px;
+    background: black;
+    border-radius: 5px;
+    margin: 2px 0px;
+    transform-origin: left;
+    transition: all 0.5s;
+  }
+}
+  
+
+
 // **Side menu**
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -64,34 +99,56 @@ html{
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     right: 0;
-    background-color: #C3D6CA; /* Black*/
+    background-color: #C3D6CA;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 5%; /* Place content 60px from the top */
     transition:  0.5s; /* 0.5 second transition effect to slide in the sidenav */
 
     .sidenav-content{
-    height: 90%;   
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 0px;
-    align-items: center;
+        height: 85%;   
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
 
-    a {
-    font-family: Roboto;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 1rem;
-    color: #000000;
-    transition:  0.3s;
-    writing-mode: vertical-rl;
-    font-weight: bold;
+    div {
+        font-family: Roboto;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1rem;
+        color: #000000;
+        transition:  0.3s;
+        writing-mode: vertical-rl;
+        font-weight: bold;
+        cursor: pointer;
   }
 }
 }
-.sidenav a:hover {
+.sidenav div:hover {
     color: #f1f1f1;
   }
+
+.sidenav-subpages{
+    float: left;
+    top: 96px;
+.project-subpages{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 9999;
+    background:#FF5875;
+    width: 436px;
+    align-items: center;
+    top: 96px;
+    //left: 65%;
+    //float: left;
+    a{
+        height: 90px;
+    }
+
+  }
+}
 
 
 
