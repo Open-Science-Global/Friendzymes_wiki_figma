@@ -76,6 +76,7 @@ function open_close_nav(){
         //side menu width
         document.querySelector(".sidenav").style.width = "77px"
         document.querySelector(".sidenav-content").style.display = "flex"
+        document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
     }
     else{
         //hamburger animation
