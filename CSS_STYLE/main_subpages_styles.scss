@@ -17,6 +17,265 @@ html{
     background: #FF8552;
 }
 
+//NAVIGATION SIDE MENU --------------------------------------------------------
+//hamburger-menu
+.hamburger-menu {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 2rem;
+    width: 2.3rem;
+    cursor: pointer;
+    left: 96%;
+    top: 29px; 
+    position:absolute;
+    z-index:1000;
+    .top {
+        transform: rotate(0deg);
+        }
+      
+      .middle {
+        opacity: 100%;
+        }
+      
+      .bottom {
+        transform: rotate(0deg);
+        }
+  .bar {
+    height: 4px;
+    background: black;
+    border-radius: 5px;
+    margin: 2px 0px;
+    transform-origin: left;
+    transition: all 0.5s;
+  }
+}
+
+
+// **Side menu**
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #C3D6CA;
+    //overflow-x:auto; /* Disable horizontal scroll */
+    padding-top: 5%; /* Place content 60px from the top */
+    transition:  0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+
+    .sidenav-content{
+        height: 85%;   
+        display:none;
+        flex-direction: column;
+        //justify-content: space-around;
+        //align-items: center;
+        gap: 9px;
+        .sidenav-item {
+            display: flex;
+            font-family: Roboto;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 1rem;
+            color: #000000;
+            transition:  0.3s;
+            writing-mode: vertical-rl;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-basis: 0;
+            flex-grow: 1;
+            &:hover{
+                background-color: #FF5875;
+            }
+        }
+    }
+}
+
+//**Subpages styles**
+.subpages{
+    a{
+    font-family: Roboto;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 60px;
+    border-bottom:3px solid #000000;
+    width: 70%;
+    }
+}
+
+
+.project-subpages{
+    display: none;
+    justify-content: space-around;
+    writing-mode: horizontal-tb;
+    flex-direction: column;
+    position: absolute;
+    z-index: 9999;
+    background:#FF5875;
+    width: 30rem;
+    height: 85%;
+    top: 0px;
+    right: 77px;
+    font-family: Roboto;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+.project-item:hover{
+    .project-subpages{
+    display: flex;
+    }
+}
+.labs-subpages{
+    display: none;
+    justify-content: space-around;
+    writing-mode: horizontal-tb;
+    flex-direction: column;
+    position: absolute;
+    z-index: 9999;
+    background:#FF5875;
+    width: 30rem;
+    height: 85%;
+    top: 0px;
+    //margin-left: auto;
+    right: 77px;
+    font-family: Roboto;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+.lab-item:hover{
+    .labs-subpages{
+    display: flex;
+    }
+}
+.software-subpages{
+    display: none;
+    justify-content: space-around;
+    writing-mode: horizontal-tb;
+    flex-direction: column;
+    position: absolute;
+    z-index: 9999;
+    background:#FF5875;
+    width: 30rem;
+    height: 85%;
+    top: 0px;
+    //margin-left: auto;
+    right: 77px;
+    font-family: Roboto;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+.software-item:hover{
+    .software-subpages{
+    display: flex;
+    }
+}
+.hardware-subpages{
+    display: none;
+    justify-content: space-around;
+    writing-mode: horizontal-tb;
+    flex-direction: column;
+    position: absolute;
+    z-index: 9999;
+    background:#FF5875;
+    width: 30rem;
+    height: 85%;
+    top: 0px;
+    //margin-left: auto;
+    right: 77px;
+    font-family: Roboto;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+.hardware-item:hover{
+    .hardware-subpages{
+    display: flex;
+    }
+}
+.hp-subpages{
+    display: none;
+    justify-content: space-around;
+    writing-mode: horizontal-tb;
+    flex-direction: column;
+    position: absolute;
+    z-index: 9999;
+    background:#FF5875;
+    width: 30rem;
+    height: 85%;
+    top: 0px;
+    //margin-left: auto;
+    right: 77px;
+    font-family: Roboto;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+.hp-item:hover{
+    .hp-subpages{
+    display: flex;
+    }
+}
+.team-subpages{
+    display: none;
+    justify-content: space-around;
+    writing-mode: horizontal-tb;
+    flex-direction: column;
+    position: absolute;
+    z-index: 9999;
+    background:#FF5875;
+    width: 30rem;
+    height: 85%;
+    top: 0px;
+    //margin-left: auto;
+    right: 77px;
+    font-family: Roboto;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+.team-item:hover{
+    .team-subpages{
+    display: flex;
+    }
+}
+
+
+
+
+
+
+
+//------------------------------------------------------------------------------
+
 .Subtitle{
     position: absolute;
     width: 214px;
@@ -46,7 +305,7 @@ html{
 
 }
 .index{
-    position: fixed;
+    position: absolute;
     left: 2rem;
     top: 29rem;
     text-transform: uppercase;
@@ -56,7 +315,7 @@ html{
 
 }
 .subsite-container{
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,6 +332,7 @@ html{
 
     a{
         text-decoration: none; 
+        text-transform: uppercase;
         color: black;
         width: 80%;
         border-bottom: 0.5px solid #DCDCDC;
@@ -83,7 +343,7 @@ html{
 }  
 
 .submenu-title{
-    position: fixed;
+    position: absolute;
     width: 150px;
     left: 1110px;
     top: 29rem;
@@ -96,7 +356,7 @@ html{
     color: #000000;
 }
 .submenu-content{
-    position: sticky;
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -105,7 +365,7 @@ html{
     width: 296.3px;
     height: 262px;
     left: 1105.7px;
-    top: 33rem;
+    top: 32rem;
     background: #F8F8F8;
     border-radius: 15px;
     a{
@@ -141,15 +401,18 @@ html{
 .text-container{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     width: 743px;
-    height:fit-content;
+    height:auto;
+    padding-bottom: 30px;
+    padding-top: 10px;
     left: 340px;
     top: 359px;
     background: #F9F9F9;
     border-radius: 38px;
     box-shadow: 0px 11px 15px 1px rgba(0,0,0,0.65);
     align-items: flex-start;
+    overflow: hidden;
     h2{
         align-self: flex-start!important;
         font-family: Roboto;
@@ -173,8 +436,53 @@ html{
         //line-height: 18px;
         letter-spacing: 0.01em;
         color: #000000;
-        width: 85%;
+        //width: 100%;
         text-align: justify;
+        margin-right: 40px;
         margin-left: 40px;
+        //margin-left: 40px;
     }
+}
+
+.footer-enzyme1{
+    position: absolute;
+    width:500px;
+    left: 419.4px;
+    top: 1500px;
+    transform: rotate(54.88deg);
+    opacity: 0.45;
+}
+.footer-enzyme2{
+    position: absolute;
+    width: 500px;
+    left: 890px;
+    top: 1500px;
+    transform: rotate(90deg);
+    opacity: 0.45;
+}
+.footer-enzyme3{
+    position: absolute;
+    width: 500px;
+    left: 50px;
+    top: 1500px;    
+    transform: rotate(-150deg);
+    opacity: 0.45;
+}
+
+
+footer{
+    position: absolute;
+    height: 300px;
+    width:1440px;
+    bottom: 0;
+    top: 1804px;
+    background: #1E2833;
+}
+.fixed{
+    position: fixed;
+    top: 50px;
+}
+.fixed-title{
+    position: fixed;
+    top: 10px;
 }
