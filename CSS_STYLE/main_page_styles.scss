@@ -9,52 +9,6 @@ html{
 }
 
 // **navigation bar**
-.top-menu{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    width: 93.8%;
-    height: 40px;
-    left: 81px;
-    top: 29px; 
-    z-index: 1;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 28px;
-    row-gap: 0px;
-    justify-content: center;
-    text-align: center;
-    cursor: pointer;
-    
-    .menu-items{
-        width: 255px;
-        
-    }
-    .top-project{
-        border-bottom: 5px solid #FF8552;;
-    }
-    .top-Software{
-        border-bottom: 5px solid #FFEC63;
-    }
-    .top-Wetware{
-        border-bottom: 5px solid #32CFD3;
-    }
-    .top-Hardware{
-        border-bottom: 5px solid #4F5484;
-    }
-    .top-HumanPractices{
-        border-bottom: 5px solid #F8F1EF;
-    }
-
-    .drop-btn{
-        width: 80px;
-        border-bottom: 5px solid #000000;
-        position: relative;
-        z-index: 999999;
-    }
-}
 
 //hamburger-menu
 .hamburger-menu {
@@ -64,7 +18,7 @@ html{
     height: 2rem;
     width: 2.3rem;
     cursor: pointer;
-    left: 96%;
+    left: 1390px;
     top: 29px; 
     position:absolute;
     z-index:1000;
@@ -90,7 +44,6 @@ html{
 }
   
 
-
 // **Side menu**
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -100,7 +53,6 @@ html{
     top: 0; /* Stay at the top */
     right: 0;
     background-color: #C3D6CA;
-    //overflow-x:auto; /* Disable horizontal scroll */
     padding-top: 5%; /* Place content 60px from the top */
     transition:  0.5s; /* 0.5 second transition effect to slide in the sidenav */
 
@@ -109,8 +61,6 @@ html{
         height: 85%;   
         display:none;
         flex-direction: column;
-        //justify-content: space-around;
-        //align-items: center;
         gap: 9px;
         .sidenav-item {
             display: flex;
@@ -265,7 +215,6 @@ html{
     width: 30rem;
     height: 85%;
     top: 0px;
-    //margin-left: auto;
     right: 77px;
     font-family: Roboto;
     text-decoration: none;
@@ -291,7 +240,6 @@ html{
     width: 30rem;
     height: 85%;
     top: 0px;
-    //margin-left: auto;
     right: 77px;
     font-family: Roboto;
     text-decoration: none;
@@ -309,19 +257,16 @@ html{
 
 
 
-
-
-
-
 // **Main Container**
 .container{
     position: relative;
-    background: #FFFFFF;
+    background: #E4E4E4;
     overflow: hidden;
+    width: 1440px;
 }
 .slider{
     display: flex;
-    width:400%;
+    width:700%;
     height: 75rem;
     transition: all .25s ease-in;
     transform: translateX(0);
@@ -330,174 +275,335 @@ html{
     height: 100%;
     width: 100%;
     position: relative;
-
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    overflow: hidden;
 }
 
 //**Slide Content**
-    .Software.slide{
-        //position: relative;
-        //width: 1440px;
-        //height: 1024px;
-        left: 0px;
-        top: 0px;
-        background: #FFEC63;
-        z-index: 0;
-        overflow: hidden;
-        
-    }
-    .description{
-        position: absolute;
-        width: 674px;
-        height: 336px;
-        left: 531px;
-        top: 450px;
 
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 28px;
-
-        color: #000000;
-    }
-    .title{
-        position: absolute;
-        width: 701px;
-        height: 169px;
-        left: 527px;
-        top: 220px;
-
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 144px;
-        line-height: 169px;
-        /* identical to box height */
-        z-index: 1;
-        letter-spacing: 0.1em;
-        color: #000000;
-    }
-    .title-box{
-        position: absolute;
-        width: 697px;
-        height: 120px;
-        left: 531px;
-        top: 305px;
-        z-index: 0;
-        background: #F8D900;
-    }
-    .freddie{
-        position: absolute;
-        width: 352px;
-        height: 310px;
-        left: 77px;
-        top: 350px;
-    }
-    .bacteria1{
-    position: absolute;
-    width: 434.49px;
-    height: 876.78px;
-    left: 10px;
-    top: 0px;
-    background: rgba(0, 0, 0, 0.15);
-    border-radius: 398.816px;
-    transform: rotate(-120deg);
-    }
-    .bacteria2{
-        position: absolute;
-        width: 498.6px;
-        height: 959.45px;
-        left: 800px;
-        top: 500.35px;
-        background: rgba(0, 0, 0, 0.15);
-        border-radius: 461.065px;
-        transform: rotate(144.73deg);
-    }
-    .Wetware.slide{
+//VIDEO-SLIDE AND PROJECT WILL HAVE DIFFERENT ELEMENTS POSITIONS
+    .Video-slide{
+        height: 100%;
+        width: 100%;
         position: relative;
-        //width: 1440px;
-        //height: 1024px;
         left: 0px;
         top: 0px;
-        background: #32CFD3;
         z-index: 0;
         overflow: hidden;
-        .title-box{
-            background: #00F9FF;
-        }
-        
-        
-    }
-
-    .Hardware.slide{
-        position: relative;
-        //width: 1440px;
-        //height: 1024px;
-        left: 0px;
-        top: 0px;
-        background: #4F5484;
-        z-index: 0;
-        overflow: hidden;
-        .title-box{
-            background: #232D95;
-        }
-        
-    }
-    .Human-Practices.slide{
-        position: relative;
-        //width: 1440px;
-        //height: 1024px;
-        left: 0px;
-        top: 0px;
-        background: #F8F1EF;
-        z-index: 0;
-        overflow: hidden;
-        .title-box{
-            background: #C4C4C4;
-        }
         .title{
-            font-size: 10.9rem ;
-            top: 6%;
-        }
-        
+            position: absolute;
+            width: 1000px;
+            height: 169px;
+            left: 251px;
+            top: 45px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 144px;
+            line-height: 169px;
+            letter-spacing: 0.1em;
+
+            }
+            .title-box{
+                position: absolute;
+                width: 1004px;
+                height: 126px;
+                left: 232px;
+                top: 130px;
+                background: #FFFFFF;
+            }
+            .video{
+                position: absolute;
+                width: 1344px;
+                height: 536px;
+                left: 48px;
+                top: 298px;
+                background: #C4C4C4;
+            }
+            .join-btn{
+                position: absolute;
+                width: 296px;
+                height: 98px;
+                left: 572px;
+                top: 850px;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 15px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 33px;
+                line-height: 39px;
+                text-align: center;
+            }
     }
 
-    .next{
-            z-index: 10;
-            font-size: 25px;
-            top: 87%;
-            left: 80%;
-            font-weight: 700;
+    .Project{
+        .title{
             position: absolute;
+            width: 706px;
+            height: 169px;
+            left: 110px;
+            top: 750px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 144px;
+            line-height: 169px;
+            letter-spacing: 0.1em;
         }
-    .prev{
-            right: 80%;
+        .title-box{
             position: absolute;
-            font-size: 25px;
-            z-index: 10;
-            top: 87%;
+            width: 581px;
+            height: 120px;
+            left: 93px;
+            top: 849px;
+            background: #F56529;
         }
-    .nav-btn{
-            //position: relative;
-            text-align: center;
-            background: #C3D6CA;
-            cursor: pointer;
-            width: 148px;
-            height: 74px;
-            border-radius: 7px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 5px;
-            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25); 
+        .description{
+            position: absolute;
+            width: 834px;
+            height: 430px;
+            left: 531px;
+            top: 347px;
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
             font-size: 24px;
-            line-height: 28px;
+            line-height: 35px;
+            text-align: justify;
             letter-spacing: 0.1em;
-            &:hover{
-                background: white;
-            }
-    
+        }
+        .project-img{
+            position: absolute;
+            width: 834px;
+            height: 258px;
+            left: 531px;
+            top: 76px;
+            object-fit: cover;
+            box-shadow: 10px 10px 10px -1px rgba(0, 0, 0, 0.5);
+        }
+
     }
+
+    //THE REST WILL HAVE THE ELEMENTS IN THE SAME POSITION
+
+.description{
+    position: absolute;
+    width: 807px;
+    height: 420px;
+    left: 531px;
+    top: 353px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    color: #000000;
+    letter-spacing: 0.1em;
+    text-align: justify;
+    }
+
+.title{
+    position: absolute;
+    left: 527px;
+    top: 127px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 144px;
+    line-height: 169px;
+    z-index: 1;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+.title-box{
+    position: absolute;
+    left: 531px;
+    top: 213px;
+    z-index: 0;
+}
+
+.Software{
+    .slide{
+        left: 0px;
+        top: 0px;
+        z-index: 0;
+        overflow: hidden;    
+    }
+    .title{
+        width: 701px;
+        height: 169px;
+    }
+    .title-box{
+        width: 697px;
+        height: 120px;
+        background: #F8D900;
+    }
+}
+
+
+.Wetware{
+    .slide{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    overflow: hidden;
+    }
+    .title{
+        width: 667px;
+        height: 169px;
+        left: 535px; 
+    }
+    .title-box{
+        background: #00F9FF;
+        width: 682px;
+        height: 120px;
+    }    
+}
+
+.Hardware{
+    .slide{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    overflow: hidden;
+    }
+    .title{
+        width: 743px;
+        height: 169px;
+        left: 535px; 
+    }
+    .title-box{
+        width: 739px;
+        height: 110px;
+        background: #232D95;
+    }
+}
+
+.Human-Practices{
+    
+    .slide{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    overflow: hidden;
+    }
+    .title-box{
+        width: 739px;
+        height: 110px;
+        background: #C4C4C4;
+    }
+    .title{
+        width: 725px;
+        height: 338px;
+        font-size: 10.9rem ;
+        left: 545px;
+        top: -26px;
+    }
+}
+.About-us{
+    .slide{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    overflow: hidden;
+    }
+    .title{
+        position: absolute;
+        width: 700px;
+        height: 169px;
+        left: 380px;
+        top: 95px;
+    }
+    .description{
+        position: absolute;
+        width: 481px;
+        height: 420px;
+        left: 59px;
+        top: 314px;
+    }
+    .map-img{
+        position: absolute;
+        width: 787px;
+        height: 454px;
+        left: 557px;
+        top: 287px; 
+    }
+}
+
+.freddie{
+    position: absolute;
+    width: 469px;
+    height: 469px;
+    left: 8px;
+    top: 83px;
+}
+
+//NAVIGATION BUTTONS
+    .nav-btn{
+            width: 25px;
+            height: 25px;
+            border-top: 2px solid #000;
+            border-left: 2px solid #000;
+            cursor:pointer;
+          }
+    .nav-btn::after{
+        content: "";
+        display: block;
+        width: 2px;
+        height: 45px;
+        background-color: black;
+        transform: rotate(-45deg) translate(15px, 4px);
+        left: 0;
+        top: 0;
+    }
+    .next{
+            z-index: 10;
+            left: 1352px;
+            top: 850px;
+            font-weight: 700;
+            position: absolute;
+            transform: rotate(135deg);
+            display: none;
+        }
+    .prev{
+            top: 850px;
+            //left: 116px;
+            right: 1352px;
+            position: absolute;
+            font-size: 25px;
+            z-index: 10;
+            transform: rotate(-45deg);
+            display: none;
+        }
+
+
+//NAVIGATION CIRCLES
+.navigation-circles{
+    position: absolute;
+    display:none;
+    width: 275px;
+    left: 848px;
+    top: 850px;
+    z-index: 100000;
+    justify-content: space-around;
+    transition: all 0.2s ease-out;
+
+    div{
+        cursor: pointer;
+        width: 29px;
+        height: 29px;
+        border-radius: 70px; 
+        background: rgba(255, 255, 255, 0.70);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        transition: all 0.3s ease-in;
+    }
+
+}

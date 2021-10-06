@@ -9,64 +9,6 @@ html {
   font-size: 80.5%;
 }
 
-.top-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  position: absolute;
-  width: 93.8%;
-  height: 40px;
-  left: 81px;
-  top: 29px;
-  z-index: 1;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 28px;
-  row-gap: 0px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  cursor: pointer;
-}
-
-.top-menu .menu-items {
-  width: 255px;
-}
-
-.top-menu .top-project {
-  border-bottom: 5px solid #FF8552;
-}
-
-.top-menu .top-Software {
-  border-bottom: 5px solid #FFEC63;
-}
-
-.top-menu .top-Wetware {
-  border-bottom: 5px solid #32CFD3;
-}
-
-.top-menu .top-Hardware {
-  border-bottom: 5px solid #4F5484;
-}
-
-.top-menu .top-HumanPractices {
-  border-bottom: 5px solid #F8F1EF;
-}
-
-.top-menu .drop-btn {
-  width: 80px;
-  border-bottom: 5px solid #000000;
-  position: relative;
-  z-index: 999999;
-}
-
 .hamburger-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,7 +23,7 @@ html {
   height: 2rem;
   width: 2.3rem;
   cursor: pointer;
-  left: 96%;
+  left: 1390px;
   top: 29px;
   position: absolute;
   z-index: 1000;
@@ -382,15 +324,16 @@ html {
 
 .container {
   position: relative;
-  background: #FFFFFF;
+  background: #E4E4E4;
   overflow: hidden;
+  width: 1440px;
 }
 
 .slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 400%;
+  width: 700%;
   height: 75rem;
   -webkit-transition: all .25s ease-in;
   transition: all .25s ease-in;
@@ -402,42 +345,147 @@ html {
   height: 100%;
   width: 100%;
   position: relative;
-}
-
-.Software.slide {
   left: 0px;
   top: 0px;
-  background: #FFEC63;
   z-index: 0;
   overflow: hidden;
 }
 
-.description {
-  position: absolute;
-  width: 674px;
-  height: 336px;
-  left: 531px;
-  top: 450px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-  color: #000000;
+.Video-slide {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  overflow: hidden;
 }
 
-.title {
+.Video-slide .title {
   position: absolute;
-  width: 701px;
+  width: 1000px;
   height: 169px;
-  left: 527px;
-  top: 220px;
+  left: 251px;
+  top: 45px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 144px;
   line-height: 169px;
-  /* identical to box height */
+  letter-spacing: 0.1em;
+}
+
+.Video-slide .title-box {
+  position: absolute;
+  width: 1004px;
+  height: 126px;
+  left: 232px;
+  top: 130px;
+  background: #FFFFFF;
+}
+
+.Video-slide .video {
+  position: absolute;
+  width: 1344px;
+  height: 536px;
+  left: 48px;
+  top: 298px;
+  background: #C4C4C4;
+}
+
+.Video-slide .join-btn {
+  position: absolute;
+  width: 296px;
+  height: 98px;
+  left: 572px;
+  top: 850px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 33px;
+  line-height: 39px;
+  text-align: center;
+}
+
+.Project .title {
+  position: absolute;
+  width: 706px;
+  height: 169px;
+  left: 110px;
+  top: 750px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 144px;
+  line-height: 169px;
+  letter-spacing: 0.1em;
+}
+
+.Project .title-box {
+  position: absolute;
+  width: 581px;
+  height: 120px;
+  left: 93px;
+  top: 849px;
+  background: #F56529;
+}
+
+.Project .description {
+  position: absolute;
+  width: 834px;
+  height: 430px;
+  left: 531px;
+  top: 347px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: justify;
+  letter-spacing: 0.1em;
+}
+
+.Project .project-img {
+  position: absolute;
+  width: 834px;
+  height: 258px;
+  left: 531px;
+  top: 76px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 10px 10px 10px -1px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 10px 10px -1px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+  position: absolute;
+  width: 807px;
+  height: 420px;
+  left: 531px;
+  top: 353px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  color: #000000;
+  letter-spacing: 0.1em;
+  text-align: justify;
+}
+
+.title {
+  position: absolute;
+  left: 527px;
+  top: 127px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 144px;
+  line-height: 169px;
   z-index: 1;
   letter-spacing: 0.1em;
   color: #000000;
@@ -445,135 +493,195 @@ html {
 
 .title-box {
   position: absolute;
+  left: 531px;
+  top: 213px;
+  z-index: 0;
+}
+
+.Software .slide {
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.Software .title {
+  width: 701px;
+  height: 169px;
+}
+
+.Software .title-box {
   width: 697px;
   height: 120px;
-  left: 531px;
-  top: 305px;
-  z-index: 0;
   background: #F8D900;
+}
+
+.Wetware .slide {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.Wetware .title {
+  width: 667px;
+  height: 169px;
+  left: 535px;
+}
+
+.Wetware .title-box {
+  background: #00F9FF;
+  width: 682px;
+  height: 120px;
+}
+
+.Hardware .slide {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.Hardware .title {
+  width: 743px;
+  height: 169px;
+  left: 535px;
+}
+
+.Hardware .title-box {
+  width: 739px;
+  height: 110px;
+  background: #232D95;
+}
+
+.Human-Practices .slide {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.Human-Practices .title-box {
+  width: 739px;
+  height: 110px;
+  background: #C4C4C4;
+}
+
+.Human-Practices .title {
+  width: 725px;
+  height: 338px;
+  font-size: 10.9rem;
+  left: 545px;
+  top: -26px;
+}
+
+.About-us .slide {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.About-us .title {
+  position: absolute;
+  width: 700px;
+  height: 169px;
+  left: 380px;
+  top: 95px;
+}
+
+.About-us .description {
+  position: absolute;
+  width: 481px;
+  height: 420px;
+  left: 59px;
+  top: 314px;
+}
+
+.About-us .map-img {
+  position: absolute;
+  width: 787px;
+  height: 454px;
+  left: 557px;
+  top: 287px;
 }
 
 .freddie {
   position: absolute;
-  width: 352px;
-  height: 310px;
-  left: 77px;
-  top: 350px;
+  width: 469px;
+  height: 469px;
+  left: 8px;
+  top: 83px;
 }
 
-.bacteria1 {
-  position: absolute;
-  width: 434.49px;
-  height: 876.78px;
-  left: 10px;
-  top: 0px;
-  background: rgba(0, 0, 0, 0.15);
-  border-radius: 398.816px;
-  -webkit-transform: rotate(-120deg);
-          transform: rotate(-120deg);
+.nav-btn {
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  cursor: pointer;
 }
 
-.bacteria2 {
-  position: absolute;
-  width: 498.6px;
-  height: 959.45px;
-  left: 800px;
-  top: 500.35px;
-  background: rgba(0, 0, 0, 0.15);
-  border-radius: 461.065px;
-  -webkit-transform: rotate(144.73deg);
-          transform: rotate(144.73deg);
-}
-
-.Wetware.slide {
-  position: relative;
-  left: 0px;
-  top: 0px;
-  background: #32CFD3;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.Wetware.slide .title-box {
-  background: #00F9FF;
-}
-
-.Hardware.slide {
-  position: relative;
-  left: 0px;
-  top: 0px;
-  background: #4F5484;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.Hardware.slide .title-box {
-  background: #232D95;
-}
-
-.Human-Practices.slide {
-  position: relative;
-  left: 0px;
-  top: 0px;
-  background: #F8F1EF;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.Human-Practices.slide .title-box {
-  background: #C4C4C4;
-}
-
-.Human-Practices.slide .title {
-  font-size: 10.9rem;
-  top: 6%;
+.nav-btn::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 45px;
+  background-color: black;
+  -webkit-transform: rotate(-45deg) translate(15px, 4px);
+          transform: rotate(-45deg) translate(15px, 4px);
+  left: 0;
+  top: 0;
 }
 
 .next {
   z-index: 10;
-  font-size: 25px;
-  top: 87%;
-  left: 80%;
+  left: 1352px;
+  top: 850px;
   font-weight: 700;
   position: absolute;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  display: none;
 }
 
 .prev {
-  right: 80%;
+  top: 850px;
+  right: 1352px;
   position: absolute;
   font-size: 25px;
   z-index: 10;
-  top: 87%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  display: none;
 }
 
-.nav-btn {
-  text-align: center;
-  background: #C3D6CA;
+.navigation-circles {
+  position: absolute;
+  display: none;
+  width: 275px;
+  left: 848px;
+  top: 850px;
+  z-index: 100000;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.navigation-circles div {
   cursor: pointer;
-  width: 148px;
-  height: 74px;
-  border-radius: 7px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 5px;
-  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.1em;
-}
-
-.nav-btn:hover {
-  background: white;
+  width: 29px;
+  height: 29px;
+  border-radius: 70px;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 /*# sourceMappingURL=main_page_styles.css.map */
