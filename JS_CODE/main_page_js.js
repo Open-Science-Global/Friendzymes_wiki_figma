@@ -8,6 +8,9 @@ let value = 0
 // trail index number
 let trailValue = 0
 
+//viewport dimensions
+let width = document.body.clientWidth
+
 document.querySelectorAll(".nav-btn").forEach(cur => {
     // Assign function based on the class Name("next" and "prev")
     cur.addEventListener("click", () => cur.classList.contains("next") ? slide("increase") : slide("decrease"))
@@ -28,13 +31,13 @@ const slide = (condition) => {
 
 // function for increase(forward, next) configuration
 const initiateINC = () => {
-    value === 8640 ? value = 1440 : value += 1440
+    value === 6*width ? value = width : value += width
 
 }
 
 // function for decrease(backward, previous) configuration
 const initiateDEC = () => {
-    value === 0 ? value = 8640 : value -= 1440
+    value === 0 ? value = 6*width : value -= width
 
 }
 
@@ -43,15 +46,15 @@ const move = (S, T) => {
     // transform slider
     slider.style.transform = `translateX(-${S}px)`  
     trailAnimation()  
-    if(value == 1440){
+    if(value == width){
         document.querySelector(".navigation-circles").style.display = "flex"
         document.querySelector(".prev").style.display = "none"
         document.querySelector(".next").style.display = "block"
-        document.querySelector(".navigation-circles").style.left = "848px";
+        document.querySelector(".navigation-circles").style.left = "62%";
 
     }else{
         document.querySelector(".prev").style.display = "block"
-        document.querySelector(".navigation-circles").style.left = "583px";
+        document.querySelector(".navigation-circles").style.left = "40%";
 
     } 
 }
@@ -67,19 +70,20 @@ const clickCheck = (e) => {
     // add active class
     // Update slide value based on the selected trail
     if(check.classList.contains("circle1")) {
-        value = 1440
+        value = width
     } else if (check.classList.contains("circle2")) {
-        value = 2880
+        value = 2*width
     } else if (check.classList.contains("circle3")) {
-        value = 4320
+        value = 3*width
     }  else if (check.classList.contains("circle4")) {
-        value = 5760
+        value = 4*width
     }  else if (check.classList.contains("circle5")) {
-        value = 7200
+        value = 5*width
     }  else{
-        value = 8640
+        value = 6*width
     }
     move(value, trailValue)
+
 
 }
 trail.forEach(cur => cur.addEventListener("click", (ev) => clickCheck(ev)))
@@ -112,17 +116,18 @@ document.querySelector(".hamburger-menu").onclick = open_close_nav;
 document.querySelector(".join-btn").onclick = function(){slide("increase")}
 
 
+
 function trailAnimation(){
     trail.forEach(restart => {restart.style.backgroundColor = "#EBEBEB"})
-    if (value === 1440){
+    if (value === width){
         trail[0].style.backgroundColor = "#F56529"
-    }else if (value === 2*1440){
+    }else if (value === 2*width){
         trail[1].style.backgroundColor = "#FAE340"
-    }else if (value === 3*1440){
+    }else if (value === 3*width){
         trail[2].style.backgroundColor = "#00F9FF"
-    }else if (value === 4*1440){
+    }else if (value === 4*width){
         trail[3].style.backgroundColor = "#232D95" 
-    }else if (value === 5*1440){
+    }else if (value === 5*width){
         trail[4].style.backgroundColor = "#C4C4C4"
     }else{
         trail[5].style.backgroundColor = "#000000"

@@ -18,8 +18,8 @@ html{
     height: 2rem;
     width: 2.3rem;
     cursor: pointer;
-    left: 1390px;
-    top: 29px; 
+    left: 96.1%;
+    top: 3%; 
     position:absolute;
     z-index:1000;
     .top {
@@ -262,12 +262,12 @@ html{
     position: relative;
     background: #E4E4E4;
     overflow: hidden;
-    width: 1440px;
+    //width: 1440px;
 }
 .slider{
     display: flex;
     width:700%;
-    height: 75rem;
+    height: 100vh;
     transition: all .25s ease-in;
     transform: translateX(0);
 }
@@ -294,47 +294,47 @@ html{
         overflow: hidden;
         .title{
             position: absolute;
-            width: 1000px;
-            height: 169px;
-            left: 251px;
-            top: 45px;
+/*             width: 1000px;
+            height: 169px; */
+            left: 27%;
+            top: -5%;
             font-family: Roboto;
             font-style: normal;
             font-weight: bold;
-            font-size: 144px;
+            font-size: 14vh;
             line-height: 169px;
             letter-spacing: 0.1em;
 
             }
             .title-box{
                 position: absolute;
-                width: 1004px;
-                height: 126px;
-                left: 232px;
-                top: 130px;
+                width: 45vw;
+                height: 11vh;
+                left: 27%;
+                top: 9%;
                 background: #FFFFFF;
             }
             .video{
                 position: absolute;
-                width: 1344px;
-                height: 536px;
-                left: 48px;
-                top: 298px;
+                width: 90vw;
+                height: 60vh;
+                left: 5%;
+                top: 22%;
                 background: #C4C4C4;
             }
             .join-btn{
                 position: absolute;
-                width: 296px;
-                height: 98px;
-                left: 572px;
-                top: 850px;
+                width: 24vh;
+                height: 11vh;
+                left: 42%;
+                top: 85%;
                 background: #FFFFFF;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 border-radius: 15px;
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 33px;
+                font-size: 2rem;
                 line-height: 39px;
                 text-align: center;
             }
@@ -343,45 +343,44 @@ html{
     .Project{
         .title{
             position: absolute;
-            width: 706px;
-            height: 169px;
-            left: 110px;
-            top: 750px;
+/*             width: 706px;
+            height: 169px; */
+            left: 1%;
+            top: 74%;
             font-family: Roboto;
             font-style: normal;
             font-weight: bold;
-            font-size: 144px;
+            font-size: 20vh;
             line-height: 169px;
             letter-spacing: 0.1em;
         }
         .title-box{
             position: absolute;
-            width: 581px;
-            height: 120px;
-            left: 93px;
-            top: 849px;
+            width: 37vw;
+            height: 10vh;
+            left: 1%;
+            top: 90%;
             background: #F56529;
         }
         .description{
             position: absolute;
-            width: 834px;
-            height: 430px;
-            left: 531px;
-            top: 347px;
+            width: 62vw;
+            height: fit-content;
+            left: 28%;
+            top: 35%;
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 24px;
+            font-size: 3vh;
             line-height: 35px;
             text-align: justify;
-            letter-spacing: 0.1em;
         }
         .project-img{
             position: absolute;
-            width: 834px;
-            height: 258px;
-            left: 531px;
-            top: 76px;
+            width: 62vw;
+            height: 23vh;
+            left: 28%;
+            top: 10%;
             object-fit: cover;
             box-shadow: 10px 10px 10px -1px rgba(0, 0, 0, 0.5);
         }
@@ -392,38 +391,39 @@ html{
 
 .description{
     position: absolute;
-    width: 807px;
-    height: 420px;
-    left: 531px;
-    top: 353px;
+    width: 68vw;
+    height: fit-content;
+    left: 28%;
+    top:33%;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 3.4vh;
     line-height: 35px;
     color: #000000;
-    letter-spacing: 0.1em;
     text-align: justify;
     }
 
 .title{
     position: absolute;
-    left: 527px;
-    top: 127px;
+    left: 28%;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 144px;
-    line-height: 169px;
+    font-size: 23vh;
+    line-height:180px;
     z-index: 1;
     letter-spacing: 0.1em;
     color: #000000;
 }
 .title-box{
     position: absolute;
-    left: 531px;
-    top: 213px;
+    left: 28%;
+    top: 15%;
     z-index: 0;
+    width: 53vw;
+    height: 15vh;
+    
 }
 
 .Software{
@@ -433,16 +433,16 @@ html{
         z-index: 0;
         overflow: hidden;    
     }
-    .title{
+/*      .title{
         width: 701px;
         height: 169px;
-    }
+    } */
     .title-box{
-        width: 697px;
-        height: 120px;
+/*          width: 697px;
+        height: 120px; */
         background: #F8D900;
-    }
-}
+    } 
+} 
 
 
 .Wetware{
@@ -453,16 +453,15 @@ html{
     z-index: 0;
     overflow: hidden;
     }
-    .title{
+/*     .title{
         width: 667px;
         height: 169px;
         left: 535px; 
-    }
+    } */
     .title-box{
         background: #00F9FF;
-        width: 682px;
-        height: 120px;
-    }    
+        width: 51vw;
+    }   
 }
 
 .Hardware{
@@ -473,16 +472,15 @@ html{
     z-index: 0;
     overflow: hidden;
     }
-    .title{
+/*     .title{
         width: 743px;
         height: 169px;
         left: 535px; 
-    }
+    } */
     .title-box{
-        width: 739px;
-        height: 110px;
+       width: 55vw;
         background: #232D95;
-    }
+    } 
 }
 
 .Human-Practices{
@@ -494,18 +492,18 @@ html{
     z-index: 0;
     overflow: hidden;
     }
-    .title-box{
-        width: 739px;
-        height: 110px;
+     .title-box{
+        width:69vw;
+        height: 14vh; 
         background: #C4C4C4;
+        top:17%;
+        left:27%;
     }
-    .title{
-        width: 725px;
-        height: 338px;
-        font-size: 10.9rem ;
-        left: 545px;
-        top: -26px;
-    }
+     .title{
+        font-size: 16vh ;
+        left: 27%;
+        top: 1%;
+    }  
 }
 .About-us{
     .slide{
@@ -517,33 +515,31 @@ html{
     }
     .title{
         position: absolute;
-        width: 700px;
-        height: 169px;
-        left: 380px;
-        top: 95px;
+        left: 29%;
+        top: -2%;
+        font-size: 18vh;
     }
     .description{
         position: absolute;
-        width: 481px;
-        height: 420px;
-        left: 59px;
-        top: 314px;
+        width: 37vw;
+        left: 3%;
+        top: 32%;
     }
     .map-img{
         position: absolute;
-        width: 787px;
-        height: 454px;
-        left: 557px;
-        top: 287px; 
+        width: 52vw;
+        height:61vh;
+        left: 44%;
+        top: 23%; 
     }
 }
 
 .freddie{
     position: absolute;
-    width: 469px;
-    height: 469px;
-    left: 8px;
-    top: 83px;
+    width: 25vw;
+    //height: 469px;
+    //left: 8px;
+    top: 5%;
 }
 
 //NAVIGATION BUTTONS
@@ -566,17 +562,16 @@ html{
     }
     .next{
             z-index: 10;
-            left: 1352px;
-            top: 850px;
+            left:89%;
+            top: 90%;
             font-weight: 700;
             position: absolute;
             transform: rotate(135deg);
             display: none;
         }
     .prev{
-            top: 850px;
-            //left: 116px;
-            right: 1352px;
+            top: 90%;
+            right: 89%;
             position: absolute;
             font-size: 25px;
             z-index: 10;
@@ -590,20 +585,45 @@ html{
     position: absolute;
     display:none;
     width: 275px;
-    left: 848px;
-    top: 850px;
+    left: 40%;
+    top: 90%;
     z-index: 100000;
     justify-content: space-around;
     transition: all 0.2s ease-out;
 
     div{
         cursor: pointer;
-        width: 29px;
-        height: 29px;
+        width: 4.5vh;
+        height: 4.5vh;
         border-radius: 70px; 
         background: rgba(255, 255, 255, 0.70);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         transition: all 0.3s ease-in;
     }
+}
 
+.floating-enzyme{
+	position:absolute;
+	bottom: -100vh;
+	transform-style: preserve-3d;
+}
+
+$total: 11;
+@for $i from 1 through $total {
+	$scale:random(2) - .4;
+	
+	.floating-enzyme:nth-child(#{$i}){
+		left:random(120) * 1% - 20;
+		animation: raise#{$i} 6 + random(15) +s linear infinite;
+		animation-delay:random(5) - 5 + s;
+		transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+		filter: blur(4px);
+
+	  @keyframes raise#{$i} {
+		  to{
+			 bottom:150vh;
+			 transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+			}
+		}
+	}
 }
