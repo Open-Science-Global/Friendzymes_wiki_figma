@@ -97,7 +97,7 @@ function open_close_nav(){
         document.querySelector(".middle").style.opacity = "0"
         document.querySelector(".bottom").style.transform = ("rotate(-38deg)")
         //side menu width
-        document.querySelector(".sidenav").style.width = "77px"
+        document.querySelector(".sidenav").style.width = "5.9vw"
         document.querySelector(".sidenav-content").style.display = "flex"
     }
     else{
@@ -106,7 +106,7 @@ function open_close_nav(){
         document.querySelector(".middle").style.opacity = "100"
         document.querySelector(".bottom").style.transform = ("rotate(0deg)")
         //side menu width
-        document.querySelector(".sidenav").style.width = "0px"
+        document.querySelector(".sidenav").style.width = "0"
         document.querySelector(".sidenav-content").style.display = "none"
     }
 }

@@ -543,7 +543,7 @@ html {
   top: 1500px;
   -webkit-transform: rotate(54.88deg);
           transform: rotate(54.88deg);
-  opacity: 0.45;
+  opacity: 25%;
 }
 
 .footer-enzyme2 {
@@ -553,7 +553,7 @@ html {
   top: 1500px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  opacity: 0.45;
+  opacity: 25%;
 }
 
 .footer-enzyme3 {
@@ -563,7 +563,7 @@ html {
   top: 1500px;
   -webkit-transform: rotate(-150deg);
           transform: rotate(-150deg);
-  opacity: 0.45;
+  opacity: 25%;
 }
 
 footer {
