@@ -58,7 +58,7 @@ const move = (S) => {
 
     }else{
         document.querySelector(".prev").style.display = "block"
-        document.querySelector(".navigation-circles").style.left = "50%";
+        document.querySelector(".navigation-circles").style.left = "76%";
 
     } 
 }

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 body {
   margin: 0;
   background-color: white;
@@ -81,7 +82,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 9px;
+  gap: 11px;
 }
 
 .sidenav .sidenav-content .sidenav-item {
@@ -91,7 +92,7 @@ html {
   font-family: Roboto;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 2vh;
+  font-size: 1.2em;
   color: #000000;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -161,8 +162,9 @@ html {
 
 .project-subpages {
   display: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-writing-mode: horizontal-tb;
       -ms-writing-mode: lr-tb;
           writing-mode: horizontal-tb;
@@ -174,7 +176,7 @@ html {
   z-index: 9999;
   background: #FF5875;
   width: 30rem;
-  height: 85%;
+  height: 100%;
   top: 0px;
   right: 100%;
   font-family: Roboto;
@@ -183,6 +185,8 @@ html {
   color: #000000;
   cursor: pointer;
   font-weight: bold;
+  -webkit-transition: 5s;
+  transition: 5s;
 }
 
 .project-item:hover .project-subpages {
@@ -193,8 +197,9 @@ html {
 
 .labs-subpages {
   display: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-writing-mode: horizontal-tb;
       -ms-writing-mode: lr-tb;
           writing-mode: horizontal-tb;
@@ -206,9 +211,9 @@ html {
   z-index: 9999;
   background: #FF5875;
   width: 30rem;
-  height: 85%;
-  top: 0px;
-  right: 77px;
+  height: 100%;
+  top: 0;
+  right: 100%;
   font-family: Roboto;
   text-decoration: none;
   font-size: 1rem;
@@ -225,8 +230,9 @@ html {
 
 .software-subpages {
   display: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-writing-mode: horizontal-tb;
       -ms-writing-mode: lr-tb;
           writing-mode: horizontal-tb;
@@ -238,9 +244,9 @@ html {
   z-index: 9999;
   background: #FF5875;
   width: 30rem;
-  height: 85%;
-  top: 0px;
-  right: 77px;
+  height: 100%;
+  top: 0;
+  right: 100%;
   font-family: Roboto;
   text-decoration: none;
   font-size: 1rem;
@@ -257,8 +263,9 @@ html {
 
 .hardware-subpages {
   display: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-writing-mode: horizontal-tb;
       -ms-writing-mode: lr-tb;
           writing-mode: horizontal-tb;
@@ -270,9 +277,9 @@ html {
   z-index: 9999;
   background: #FF5875;
   width: 30rem;
-  height: 85%;
-  top: 0px;
-  right: 77px;
+  height: 100%;
+  top: 0;
+  right: 100%;
   font-family: Roboto;
   text-decoration: none;
   font-size: 1rem;
@@ -289,8 +296,9 @@ html {
 
 .hp-subpages {
   display: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-writing-mode: horizontal-tb;
       -ms-writing-mode: lr-tb;
           writing-mode: horizontal-tb;
@@ -302,9 +310,9 @@ html {
   z-index: 9999;
   background: #FF5875;
   width: 30rem;
-  height: 85%;
-  top: 0px;
-  right: 77px;
+  height: 100%;
+  top: 0;
+  right: 100%;
   font-family: Roboto;
   text-decoration: none;
   font-size: 1rem;
@@ -321,8 +329,9 @@ html {
 
 .team-subpages {
   display: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-writing-mode: horizontal-tb;
       -ms-writing-mode: lr-tb;
           writing-mode: horizontal-tb;
@@ -334,9 +343,9 @@ html {
   z-index: 9999;
   background: #FF5875;
   width: 30rem;
-  height: 85%;
-  top: 0px;
-  right: 77px;
+  height: 100%;
+  top: 0;
+  right: 100%;
   font-family: Roboto;
   text-decoration: none;
   font-size: 1rem;
@@ -361,12 +370,15 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 700%;
   height: 100vh;
   -webkit-transition: all .25s ease-in;
   transition: all .25s ease-in;
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  overflow: hidden;
 }
 
 .slide {
@@ -391,14 +403,12 @@ html {
 
 .Video-slide .title {
   position: absolute;
-  /*             width: 1000px;
-            height: 169px; */
   left: 27%;
   top: -6%;
-  font-family: Roboto;
+  font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 6.65vw;
+  font-size: 6.2vw;
   line-height: 169px;
   letter-spacing: 0.1em;
 }
@@ -448,43 +458,40 @@ html {
   cursor: pointer;
 }
 
+.Project {
+  width: 100%;
+}
+
 .Project .title {
   position: absolute;
-  /*             width: 706px;
-            height: 169px; */
   left: 1%;
-  top: 74%;
-  font-family: Roboto;
+  top: 72%;
+  font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 20vh;
-  line-height: 169px;
+  font-size: 9vw;
   letter-spacing: 0.1em;
 }
 
 .Project .title-box {
   position: absolute;
-  width: 37vw;
+  width: 35.7vw;
   height: 10vh;
-  left: 1%;
+  left: 1.5%;
   top: 90%;
   background: #F56529;
 }
 
 .Project .description {
   position: absolute;
-  width: 62vw;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  left: 28%;
-  top: 35%;
-  font-family: Roboto;
+  left: 40%;
+  top: -2%;
+  font-family: Baskervville;
   font-style: normal;
   font-weight: normal;
-  font-size: 3vh;
-  line-height: 35px;
-  text-align: justify;
+  font-size: 3vw;
+  text-align: center;
+  line-height: 29px;
 }
 
 .Project .project-img {
@@ -501,28 +508,24 @@ html {
 
 .description {
   position: absolute;
-  width: 68vw;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  left: 28%;
-  top: 33%;
-  font-family: Roboto;
+  left: 33%;
+  top: -2%;
+  font-family: Baskervville;
   font-style: normal;
   font-weight: normal;
-  font-size: 3.4vh;
-  line-height: 35px;
-  color: #000000;
-  text-align: justify;
+  font-size: 2.5vw;
+  text-align: center;
+  line-height: 29px;
 }
 
 .title {
   position: absolute;
-  left: 28%;
-  font-family: Roboto;
+  left: 11%;
+  top: 72%;
+  font-family: Poppins;
   font-style: normal;
-  font-weight: bold;
-  font-size: 23vh;
+  font-weight: bolder;
+  font-size: 9vw;
   line-height: 180px;
   z-index: 1;
   letter-spacing: 0.1em;
@@ -531,18 +534,29 @@ html {
 
 .title-box {
   position: absolute;
-  left: 28%;
-  top: 15%;
+  left: 11%;
+  top: 90%;
   z-index: 0;
-  width: 53vw;
+  width: 56vw;
   height: 15vh;
 }
 
+.text {
+  position: absolute;
+  width: 83vw;
+  left: 9%;
+  top: 48%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  line-height: 34px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+
 .Software {
-  /*      .title{
-        width: 701px;
-        height: 169px;
-    } */
+  width: 100%;
 }
 
 .Software .slide {
@@ -553,17 +567,12 @@ html {
 }
 
 .Software .title-box {
-  /*          width: 697px;
-        height: 120px; */
   background: #F8D900;
+  width: 47.5vw;
 }
 
 .Wetware {
-  /*     .title{
-        width: 667px;
-        height: 169px;
-        left: 535px; 
-    } */
+  width: 100%;
 }
 
 .Wetware .slide {
@@ -576,15 +585,12 @@ html {
 
 .Wetware .title-box {
   background: #00F9FF;
-  width: 51vw;
+  width: 46vw;
+  left: 12%;
 }
 
 .Hardware {
-  /*     .title{
-        width: 743px;
-        height: 169px;
-        left: 535px; 
-    } */
+  width: 100%;
 }
 
 .Hardware .slide {
@@ -596,8 +602,13 @@ html {
 }
 
 .Hardware .title-box {
-  width: 55vw;
   background: #232D95;
+  width: 49.5vw;
+  left: 11.5%;
+}
+
+.Human-Practices {
+  width: 100%;
 }
 
 .Human-Practices .slide {
@@ -609,17 +620,36 @@ html {
 }
 
 .Human-Practices .title-box {
-  width: 69vw;
-  height: 14vh;
+  position: absolute;
+  left: 11.5%;
+  top: 90%;
+  z-index: 0;
+  width: 37vw;
+  height: 15vh;
   background: #C4C4C4;
-  top: 17%;
-  left: 27%;
 }
 
 .Human-Practices .title {
-  font-size: 16vh;
-  left: 27%;
-  top: 1%;
+  position: absolute;
+  left: 11%;
+  top: 66%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 7vw;
+  line-height: 1;
+  z-index: 1;
+  letter-spacing: 0.1em;
+  color: #000000;
+  width: 6vw;
+}
+
+.Human-Practices .text {
+  top: 45%;
+}
+
+.About-us {
+  width: 100%;
 }
 
 .About-us .slide {
@@ -632,9 +662,10 @@ html {
 
 .About-us .title {
   position: absolute;
-  left: 29%;
-  top: -2%;
+  left: 11%;
+  top: 76%;
   font-size: 18vh;
+  font-family: Poppins;
 }
 
 .About-us .description {
@@ -648,14 +679,14 @@ html {
   position: absolute;
   width: 52vw;
   height: 61vh;
-  left: 44%;
-  top: 23%;
+  left: 23%;
+  top: 13%;
 }
 
 .freddie {
+  width: 8vw;
+  top: 0%;
   position: absolute;
-  width: 25vw;
-  top: 5%;
 }
 
 .nav-btn {
@@ -664,6 +695,19 @@ html {
   border-top: 2px solid #000;
   border-left: 2px solid #000;
   cursor: pointer;
+}
+
+.nav-btn:hover {
+  border-top: 2px solid #FFFFFF;
+  border-left: 2px solid #FFFFFF;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-btn:hover::after {
+  background-color: #FFFFFF;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .nav-btn::after {
@@ -676,11 +720,12 @@ html {
           transform: rotate(-45deg) translate(15px, 4px);
   left: 0;
   top: 0;
+  cursor: pointer;
 }
 
 .next {
   z-index: 10;
-  left: 89%;
+  left: 94%;
   top: 90%;
   font-weight: 700;
   position: absolute;
@@ -691,7 +736,7 @@ html {
 
 .prev {
   top: 90%;
-  right: 89%;
+  right: 94%;
   position: absolute;
   font-size: 25px;
   z-index: 10;
@@ -704,7 +749,9 @@ html {
   position: absolute;
   display: none;
   width: 275px;
-  left: 40%;
+  left: 52%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 90%;
   z-index: 100000;
   -ms-flex-pack: distribute;
@@ -733,13 +780,13 @@ html {
 }
 
 .floating-enzyme:nth-child(1) {
-  left: 58%;
-  -webkit-animation: raise1 17s linear infinite;
-          animation: raise1 17s linear infinite;
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
-  -webkit-transform: scale(-0.3) rotate(33deg);
-          transform: scale(-0.3) rotate(33deg);
+  left: 25%;
+  -webkit-animation: raise1 20s linear infinite;
+          animation: raise1 20s linear infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-transform: scale(-0.3) rotate(343deg);
+          transform: scale(-0.3) rotate(343deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -747,16 +794,16 @@ html {
 @-webkit-keyframes raise1 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(-0.3) rotate(231deg);
-            transform: scale(-0.3) rotate(231deg);
+    -webkit-transform: scale(-0.3) rotate(27deg);
+            transform: scale(-0.3) rotate(27deg);
   }
 }
 
 @keyframes raise1 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(-0.3) rotate(231deg);
-            transform: scale(-0.3) rotate(231deg);
+    -webkit-transform: scale(-0.3) rotate(27deg);
+            transform: scale(-0.3) rotate(27deg);
   }
 }
 
@@ -764,10 +811,10 @@ html {
   left: -6%;
   -webkit-animation: raise2 18s linear infinite;
           animation: raise2 18s linear infinite;
-  -webkit-animation-delay: -2s;
-          animation-delay: -2s;
-  -webkit-transform: scale(0) rotate(25deg);
-          transform: scale(0) rotate(25deg);
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  -webkit-transform: scale(0) rotate(3deg);
+          transform: scale(0) rotate(3deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -775,27 +822,27 @@ html {
 @-webkit-keyframes raise2 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(0) rotate(134deg);
-            transform: scale(0) rotate(134deg);
+    -webkit-transform: scale(0) rotate(199deg);
+            transform: scale(0) rotate(199deg);
   }
 }
 
 @keyframes raise2 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(0) rotate(134deg);
-            transform: scale(0) rotate(134deg);
+    -webkit-transform: scale(0) rotate(199deg);
+            transform: scale(0) rotate(199deg);
   }
 }
 
 .floating-enzyme:nth-child(3) {
-  left: 25%;
-  -webkit-animation: raise3 9s linear infinite;
-          animation: raise3 9s linear infinite;
-  -webkit-animation-delay: -3s;
-          animation-delay: -3s;
-  -webkit-transform: scale(0.3) rotate(95deg);
-          transform: scale(0.3) rotate(95deg);
+  left: 16%;
+  -webkit-animation: raise3 7s linear infinite;
+          animation: raise3 7s linear infinite;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  -webkit-transform: scale(0.3) rotate(28deg);
+          transform: scale(0.3) rotate(28deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -803,27 +850,27 @@ html {
 @-webkit-keyframes raise3 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(0.3) rotate(357deg);
-            transform: scale(0.3) rotate(357deg);
+    -webkit-transform: scale(0.3) rotate(77deg);
+            transform: scale(0.3) rotate(77deg);
   }
 }
 
 @keyframes raise3 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(0.3) rotate(357deg);
-            transform: scale(0.3) rotate(357deg);
+    -webkit-transform: scale(0.3) rotate(77deg);
+            transform: scale(0.3) rotate(77deg);
   }
 }
 
 .floating-enzyme:nth-child(4) {
-  left: 67%;
-  -webkit-animation: raise4 17s linear infinite;
-          animation: raise4 17s linear infinite;
+  left: 38%;
+  -webkit-animation: raise4 15s linear infinite;
+          animation: raise4 15s linear infinite;
   -webkit-animation-delay: -1s;
           animation-delay: -1s;
-  -webkit-transform: scale(0.6) rotate(306deg);
-          transform: scale(0.6) rotate(306deg);
+  -webkit-transform: scale(0.6) rotate(180deg);
+          transform: scale(0.6) rotate(180deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -831,27 +878,27 @@ html {
 @-webkit-keyframes raise4 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(0.6) rotate(7deg);
-            transform: scale(0.6) rotate(7deg);
+    -webkit-transform: scale(0.6) rotate(196deg);
+            transform: scale(0.6) rotate(196deg);
   }
 }
 
 @keyframes raise4 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(0.6) rotate(7deg);
-            transform: scale(0.6) rotate(7deg);
+    -webkit-transform: scale(0.6) rotate(196deg);
+            transform: scale(0.6) rotate(196deg);
   }
 }
 
 .floating-enzyme:nth-child(5) {
-  left: 85%;
-  -webkit-animation: raise5 21s linear infinite;
-          animation: raise5 21s linear infinite;
-  -webkit-animation-delay: -4s;
-          animation-delay: -4s;
-  -webkit-transform: scale(0.9) rotate(104deg);
-          transform: scale(0.9) rotate(104deg);
+  left: 94%;
+  -webkit-animation: raise5 15s linear infinite;
+          animation: raise5 15s linear infinite;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  -webkit-transform: scale(0.9) rotate(191deg);
+          transform: scale(0.9) rotate(191deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -859,27 +906,27 @@ html {
 @-webkit-keyframes raise5 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(0.9) rotate(164deg);
-            transform: scale(0.9) rotate(164deg);
+    -webkit-transform: scale(0.9) rotate(132deg);
+            transform: scale(0.9) rotate(132deg);
   }
 }
 
 @keyframes raise5 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(0.9) rotate(164deg);
-            transform: scale(0.9) rotate(164deg);
+    -webkit-transform: scale(0.9) rotate(132deg);
+            transform: scale(0.9) rotate(132deg);
   }
 }
 
 .floating-enzyme:nth-child(6) {
-  left: 38%;
-  -webkit-animation: raise6 12s linear infinite;
-          animation: raise6 12s linear infinite;
-  -webkit-animation-delay: -2s;
-          animation-delay: -2s;
-  -webkit-transform: scale(1.2) rotate(175deg);
-          transform: scale(1.2) rotate(175deg);
+  left: 87%;
+  -webkit-animation: raise6 10s linear infinite;
+          animation: raise6 10s linear infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-transform: scale(1.2) rotate(255deg);
+          transform: scale(1.2) rotate(255deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -887,27 +934,27 @@ html {
 @-webkit-keyframes raise6 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(1.2) rotate(162deg);
-            transform: scale(1.2) rotate(162deg);
+    -webkit-transform: scale(1.2) rotate(89deg);
+            transform: scale(1.2) rotate(89deg);
   }
 }
 
 @keyframes raise6 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(1.2) rotate(162deg);
-            transform: scale(1.2) rotate(162deg);
+    -webkit-transform: scale(1.2) rotate(89deg);
+            transform: scale(1.2) rotate(89deg);
   }
 }
 
 .floating-enzyme:nth-child(7) {
-  left: 34%;
-  -webkit-animation: raise7 14s linear infinite;
-          animation: raise7 14s linear infinite;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-transform: scale(1.5) rotate(76deg);
-          transform: scale(1.5) rotate(76deg);
+  left: 58%;
+  -webkit-animation: raise7 10s linear infinite;
+          animation: raise7 10s linear infinite;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  -webkit-transform: scale(1.5) rotate(299deg);
+          transform: scale(1.5) rotate(299deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -915,27 +962,27 @@ html {
 @-webkit-keyframes raise7 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(1.5) rotate(150deg);
-            transform: scale(1.5) rotate(150deg);
+    -webkit-transform: scale(1.5) rotate(268deg);
+            transform: scale(1.5) rotate(268deg);
   }
 }
 
 @keyframes raise7 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(1.5) rotate(150deg);
-            transform: scale(1.5) rotate(150deg);
+    -webkit-transform: scale(1.5) rotate(268deg);
+            transform: scale(1.5) rotate(268deg);
   }
 }
 
 .floating-enzyme:nth-child(8) {
-  left: -5%;
-  -webkit-animation: raise8 12s linear infinite;
-          animation: raise8 12s linear infinite;
-  -webkit-animation-delay: -4s;
-          animation-delay: -4s;
-  -webkit-transform: scale(1.8) rotate(176deg);
-          transform: scale(1.8) rotate(176deg);
+  left: 38%;
+  -webkit-animation: raise8 14s linear infinite;
+          animation: raise8 14s linear infinite;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  -webkit-transform: scale(1.8) rotate(221deg);
+          transform: scale(1.8) rotate(221deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -943,27 +990,27 @@ html {
 @-webkit-keyframes raise8 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(1.8) rotate(137deg);
-            transform: scale(1.8) rotate(137deg);
+    -webkit-transform: scale(1.8) rotate(110deg);
+            transform: scale(1.8) rotate(110deg);
   }
 }
 
 @keyframes raise8 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(1.8) rotate(137deg);
-            transform: scale(1.8) rotate(137deg);
+    -webkit-transform: scale(1.8) rotate(110deg);
+            transform: scale(1.8) rotate(110deg);
   }
 }
 
 .floating-enzyme:nth-child(9) {
-  left: -2%;
-  -webkit-animation: raise9 11s linear infinite;
-          animation: raise9 11s linear infinite;
-  -webkit-animation-delay: -2s;
-          animation-delay: -2s;
-  -webkit-transform: scale(2.1) rotate(107deg);
-          transform: scale(2.1) rotate(107deg);
+  left: 58%;
+  -webkit-animation: raise9 20s linear infinite;
+          animation: raise9 20s linear infinite;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  -webkit-transform: scale(2.1) rotate(130deg);
+          transform: scale(2.1) rotate(130deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -971,27 +1018,27 @@ html {
 @-webkit-keyframes raise9 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(2.1) rotate(309deg);
-            transform: scale(2.1) rotate(309deg);
+    -webkit-transform: scale(2.1) rotate(198deg);
+            transform: scale(2.1) rotate(198deg);
   }
 }
 
 @keyframes raise9 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(2.1) rotate(309deg);
-            transform: scale(2.1) rotate(309deg);
+    -webkit-transform: scale(2.1) rotate(198deg);
+            transform: scale(2.1) rotate(198deg);
   }
 }
 
 .floating-enzyme:nth-child(10) {
-  left: 90%;
-  -webkit-animation: raise10 10s linear infinite;
-          animation: raise10 10s linear infinite;
+  left: 56%;
+  -webkit-animation: raise10 21s linear infinite;
+          animation: raise10 21s linear infinite;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
-  -webkit-transform: scale(2.4) rotate(112deg);
-          transform: scale(2.4) rotate(112deg);
+  -webkit-transform: scale(2.4) rotate(48deg);
+          transform: scale(2.4) rotate(48deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -999,27 +1046,27 @@ html {
 @-webkit-keyframes raise10 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(2.4) rotate(309deg);
-            transform: scale(2.4) rotate(309deg);
+    -webkit-transform: scale(2.4) rotate(89deg);
+            transform: scale(2.4) rotate(89deg);
   }
 }
 
 @keyframes raise10 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(2.4) rotate(309deg);
-            transform: scale(2.4) rotate(309deg);
+    -webkit-transform: scale(2.4) rotate(89deg);
+            transform: scale(2.4) rotate(89deg);
   }
 }
 
 .floating-enzyme:nth-child(11) {
-  left: 34%;
-  -webkit-animation: raise11 21s linear infinite;
-          animation: raise11 21s linear infinite;
-  -webkit-animation-delay: -2s;
-          animation-delay: -2s;
-  -webkit-transform: scale(2.7) rotate(216deg);
-          transform: scale(2.7) rotate(216deg);
+  left: 100%;
+  -webkit-animation: raise11 18s linear infinite;
+          animation: raise11 18s linear infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-transform: scale(2.7) rotate(56deg);
+          transform: scale(2.7) rotate(56deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -1027,16 +1074,16 @@ html {
 @-webkit-keyframes raise11 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(2.7) rotate(186deg);
-            transform: scale(2.7) rotate(186deg);
+    -webkit-transform: scale(2.7) rotate(201deg);
+            transform: scale(2.7) rotate(201deg);
   }
 }
 
 @keyframes raise11 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(2.7) rotate(186deg);
-            transform: scale(2.7) rotate(186deg);
+    -webkit-transform: scale(2.7) rotate(201deg);
+            transform: scale(2.7) rotate(201deg);
   }
 }
 /*# sourceMappingURL=page.css.map */
