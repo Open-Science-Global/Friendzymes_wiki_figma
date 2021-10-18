@@ -733,13 +733,13 @@ html {
 }
 
 .floating-enzyme:nth-child(1) {
-  left: 51%;
+  left: 58%;
   -webkit-animation: raise1 17s linear infinite;
           animation: raise1 17s linear infinite;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-transform: scale(-0.3) rotate(79deg);
-          transform: scale(-0.3) rotate(79deg);
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  -webkit-transform: scale(-0.3) rotate(33deg);
+          transform: scale(-0.3) rotate(33deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -747,27 +747,27 @@ html {
 @-webkit-keyframes raise1 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(-0.3) rotate(147deg);
-            transform: scale(-0.3) rotate(147deg);
+    -webkit-transform: scale(-0.3) rotate(231deg);
+            transform: scale(-0.3) rotate(231deg);
   }
 }
 
 @keyframes raise1 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(-0.3) rotate(147deg);
-            transform: scale(-0.3) rotate(147deg);
+    -webkit-transform: scale(-0.3) rotate(231deg);
+            transform: scale(-0.3) rotate(231deg);
   }
 }
 
 .floating-enzyme:nth-child(2) {
-  left: -4%;
-  -webkit-animation: raise2 20s linear infinite;
-          animation: raise2 20s linear infinite;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-transform: scale(0) rotate(104deg);
-          transform: scale(0) rotate(104deg);
+  left: -6%;
+  -webkit-animation: raise2 18s linear infinite;
+          animation: raise2 18s linear infinite;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-transform: scale(0) rotate(25deg);
+          transform: scale(0) rotate(25deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -775,27 +775,27 @@ html {
 @-webkit-keyframes raise2 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(0) rotate(184deg);
-            transform: scale(0) rotate(184deg);
+    -webkit-transform: scale(0) rotate(134deg);
+            transform: scale(0) rotate(134deg);
   }
 }
 
 @keyframes raise2 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(0) rotate(184deg);
-            transform: scale(0) rotate(184deg);
+    -webkit-transform: scale(0) rotate(134deg);
+            transform: scale(0) rotate(134deg);
   }
 }
 
 .floating-enzyme:nth-child(3) {
-  left: 44%;
-  -webkit-animation: raise3 20s linear infinite;
-          animation: raise3 20s linear infinite;
-  -webkit-animation-delay: -4s;
-          animation-delay: -4s;
-  -webkit-transform: scale(0.3) rotate(148deg);
-          transform: scale(0.3) rotate(148deg);
+  left: 25%;
+  -webkit-animation: raise3 9s linear infinite;
+          animation: raise3 9s linear infinite;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  -webkit-transform: scale(0.3) rotate(95deg);
+          transform: scale(0.3) rotate(95deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -803,27 +803,27 @@ html {
 @-webkit-keyframes raise3 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(0.3) rotate(300deg);
-            transform: scale(0.3) rotate(300deg);
+    -webkit-transform: scale(0.3) rotate(357deg);
+            transform: scale(0.3) rotate(357deg);
   }
 }
 
 @keyframes raise3 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(0.3) rotate(300deg);
-            transform: scale(0.3) rotate(300deg);
+    -webkit-transform: scale(0.3) rotate(357deg);
+            transform: scale(0.3) rotate(357deg);
   }
 }
 
 .floating-enzyme:nth-child(4) {
-  left: 5%;
-  -webkit-animation: raise4 13s linear infinite;
-          animation: raise4 13s linear infinite;
-  -webkit-animation-delay: -2s;
-          animation-delay: -2s;
-  -webkit-transform: scale(0.6) rotate(142deg);
-          transform: scale(0.6) rotate(142deg);
+  left: 67%;
+  -webkit-animation: raise4 17s linear infinite;
+          animation: raise4 17s linear infinite;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  -webkit-transform: scale(0.6) rotate(306deg);
+          transform: scale(0.6) rotate(306deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -831,27 +831,27 @@ html {
 @-webkit-keyframes raise4 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(0.6) rotate(59deg);
-            transform: scale(0.6) rotate(59deg);
+    -webkit-transform: scale(0.6) rotate(7deg);
+            transform: scale(0.6) rotate(7deg);
   }
 }
 
 @keyframes raise4 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(0.6) rotate(59deg);
-            transform: scale(0.6) rotate(59deg);
+    -webkit-transform: scale(0.6) rotate(7deg);
+            transform: scale(0.6) rotate(7deg);
   }
 }
 
 .floating-enzyme:nth-child(5) {
-  left: 52%;
-  -webkit-animation: raise5 19s linear infinite;
-          animation: raise5 19s linear infinite;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-transform: scale(0.9) rotate(293deg);
-          transform: scale(0.9) rotate(293deg);
+  left: 85%;
+  -webkit-animation: raise5 21s linear infinite;
+          animation: raise5 21s linear infinite;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  -webkit-transform: scale(0.9) rotate(104deg);
+          transform: scale(0.9) rotate(104deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -859,27 +859,27 @@ html {
 @-webkit-keyframes raise5 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(0.9) rotate(77deg);
-            transform: scale(0.9) rotate(77deg);
+    -webkit-transform: scale(0.9) rotate(164deg);
+            transform: scale(0.9) rotate(164deg);
   }
 }
 
 @keyframes raise5 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(0.9) rotate(77deg);
-            transform: scale(0.9) rotate(77deg);
+    -webkit-transform: scale(0.9) rotate(164deg);
+            transform: scale(0.9) rotate(164deg);
   }
 }
 
 .floating-enzyme:nth-child(6) {
-  left: 82%;
-  -webkit-animation: raise6 8s linear infinite;
-          animation: raise6 8s linear infinite;
-  -webkit-animation-delay: -4s;
-          animation-delay: -4s;
-  -webkit-transform: scale(1.2) rotate(251deg);
-          transform: scale(1.2) rotate(251deg);
+  left: 38%;
+  -webkit-animation: raise6 12s linear infinite;
+          animation: raise6 12s linear infinite;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-transform: scale(1.2) rotate(175deg);
+          transform: scale(1.2) rotate(175deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -887,27 +887,27 @@ html {
 @-webkit-keyframes raise6 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(1.2) rotate(124deg);
-            transform: scale(1.2) rotate(124deg);
+    -webkit-transform: scale(1.2) rotate(162deg);
+            transform: scale(1.2) rotate(162deg);
   }
 }
 
 @keyframes raise6 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(1.2) rotate(124deg);
-            transform: scale(1.2) rotate(124deg);
+    -webkit-transform: scale(1.2) rotate(162deg);
+            transform: scale(1.2) rotate(162deg);
   }
 }
 
 .floating-enzyme:nth-child(7) {
-  left: 52%;
-  -webkit-animation: raise7 9s linear infinite;
-          animation: raise7 9s linear infinite;
-  -webkit-animation-delay: -2s;
-          animation-delay: -2s;
-  -webkit-transform: scale(1.5) rotate(308deg);
-          transform: scale(1.5) rotate(308deg);
+  left: 34%;
+  -webkit-animation: raise7 14s linear infinite;
+          animation: raise7 14s linear infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-transform: scale(1.5) rotate(76deg);
+          transform: scale(1.5) rotate(76deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -915,27 +915,27 @@ html {
 @-webkit-keyframes raise7 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(1.5) rotate(198deg);
-            transform: scale(1.5) rotate(198deg);
+    -webkit-transform: scale(1.5) rotate(150deg);
+            transform: scale(1.5) rotate(150deg);
   }
 }
 
 @keyframes raise7 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(1.5) rotate(198deg);
-            transform: scale(1.5) rotate(198deg);
+    -webkit-transform: scale(1.5) rotate(150deg);
+            transform: scale(1.5) rotate(150deg);
   }
 }
 
 .floating-enzyme:nth-child(8) {
-  left: 17%;
-  -webkit-animation: raise8 21s linear infinite;
-          animation: raise8 21s linear infinite;
+  left: -5%;
+  -webkit-animation: raise8 12s linear infinite;
+          animation: raise8 12s linear infinite;
   -webkit-animation-delay: -4s;
           animation-delay: -4s;
-  -webkit-transform: scale(1.8) rotate(126deg);
-          transform: scale(1.8) rotate(126deg);
+  -webkit-transform: scale(1.8) rotate(176deg);
+          transform: scale(1.8) rotate(176deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -943,27 +943,27 @@ html {
 @-webkit-keyframes raise8 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(1.8) rotate(192deg);
-            transform: scale(1.8) rotate(192deg);
+    -webkit-transform: scale(1.8) rotate(137deg);
+            transform: scale(1.8) rotate(137deg);
   }
 }
 
 @keyframes raise8 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(1.8) rotate(192deg);
-            transform: scale(1.8) rotate(192deg);
+    -webkit-transform: scale(1.8) rotate(137deg);
+            transform: scale(1.8) rotate(137deg);
   }
 }
 
 .floating-enzyme:nth-child(9) {
-  left: 9%;
-  -webkit-animation: raise9 12s linear infinite;
-          animation: raise9 12s linear infinite;
-  -webkit-animation-delay: -3s;
-          animation-delay: -3s;
-  -webkit-transform: scale(2.1) rotate(134deg);
-          transform: scale(2.1) rotate(134deg);
+  left: -2%;
+  -webkit-animation: raise9 11s linear infinite;
+          animation: raise9 11s linear infinite;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-transform: scale(2.1) rotate(107deg);
+          transform: scale(2.1) rotate(107deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -971,27 +971,27 @@ html {
 @-webkit-keyframes raise9 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(2.1) rotate(142deg);
-            transform: scale(2.1) rotate(142deg);
+    -webkit-transform: scale(2.1) rotate(309deg);
+            transform: scale(2.1) rotate(309deg);
   }
 }
 
 @keyframes raise9 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(2.1) rotate(142deg);
-            transform: scale(2.1) rotate(142deg);
+    -webkit-transform: scale(2.1) rotate(309deg);
+            transform: scale(2.1) rotate(309deg);
   }
 }
 
 .floating-enzyme:nth-child(10) {
-  left: 37%;
-  -webkit-animation: raise10 9s linear infinite;
-          animation: raise10 9s linear infinite;
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
-  -webkit-transform: scale(2.4) rotate(272deg);
-          transform: scale(2.4) rotate(272deg);
+  left: 90%;
+  -webkit-animation: raise10 10s linear infinite;
+          animation: raise10 10s linear infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-transform: scale(2.4) rotate(112deg);
+          transform: scale(2.4) rotate(112deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -999,27 +999,27 @@ html {
 @-webkit-keyframes raise10 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(2.4) rotate(136deg);
-            transform: scale(2.4) rotate(136deg);
+    -webkit-transform: scale(2.4) rotate(309deg);
+            transform: scale(2.4) rotate(309deg);
   }
 }
 
 @keyframes raise10 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(2.4) rotate(136deg);
-            transform: scale(2.4) rotate(136deg);
+    -webkit-transform: scale(2.4) rotate(309deg);
+            transform: scale(2.4) rotate(309deg);
   }
 }
 
 .floating-enzyme:nth-child(11) {
-  left: 18%;
-  -webkit-animation: raise11 12s linear infinite;
-          animation: raise11 12s linear infinite;
-  -webkit-animation-delay: -3s;
-          animation-delay: -3s;
-  -webkit-transform: scale(2.7) rotate(111deg);
-          transform: scale(2.7) rotate(111deg);
+  left: 34%;
+  -webkit-animation: raise11 21s linear infinite;
+          animation: raise11 21s linear infinite;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-transform: scale(2.7) rotate(216deg);
+          transform: scale(2.7) rotate(216deg);
   -webkit-filter: blur(4px);
           filter: blur(4px);
 }
@@ -1027,16 +1027,16 @@ html {
 @-webkit-keyframes raise11 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(2.7) rotate(86deg);
-            transform: scale(2.7) rotate(86deg);
+    -webkit-transform: scale(2.7) rotate(186deg);
+            transform: scale(2.7) rotate(186deg);
   }
 }
 
 @keyframes raise11 {
   to {
     bottom: 150vh;
-    -webkit-transform: scale(2.7) rotate(86deg);
-            transform: scale(2.7) rotate(86deg);
+    -webkit-transform: scale(2.7) rotate(186deg);
+            transform: scale(2.7) rotate(186deg);
   }
 }
 /*# sourceMappingURL=page.css.map */

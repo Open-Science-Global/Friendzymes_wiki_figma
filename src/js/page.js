@@ -9,7 +9,7 @@ let value = 0
 let trailValue = 0
 
 //viewport dimensions
-let width = document.body.clientWidth
+let width = 14.2857
 
 document.querySelectorAll(".nav-btn").forEach(cur => {
     // Assign function based on the class Name("next" and "prev")
@@ -24,37 +24,41 @@ const slide = (condition) => {
     // update value and trailValue
     condition === "increase" ? initiateINC() : initiateDEC()
     // move slide
-    move(value, trailValue)    
+    move(value.toFixed(4))    
 }
 
 
 
 // function for increase(forward, next) configuration
 const initiateINC = () => {
-    value === 6*width ? value = width : value += width
+    value.toFixed(4) == 6*width ? value = 0 : value += width
 
 }
 
 // function for decrease(backward, previous) configuration
 const initiateDEC = () => {
-    value === 0 ? value = 6*width : value -= width
+    value.toFixed(4) == 0 ? value = 6*width : value -= width
 
 }
 
 // function to transform slide 
-const move = (S, T) => {
+const move = (S) => {
     // transform slider
-    slider.style.transform = `translateX(-${S}px)`  
-    trailAnimation()  
-    if(value == width){
+    slider.style.transform = `translateX(-${S}%)`  
+    trailAnimation()
+    if(value == 0){
+        document.querySelector(".navigation-circles").style.display = "none"
+        document.querySelector(".prev").style.display = "none"
+        document.querySelector(".next").style.display = "none"
+    }else if(value.toFixed(4) == width){
         document.querySelector(".navigation-circles").style.display = "flex"
         document.querySelector(".prev").style.display = "none"
         document.querySelector(".next").style.display = "block"
-        document.querySelector(".navigation-circles").style.left = "62%";
+        document.querySelector(".navigation-circles").style.left = "63%";
 
     }else{
         document.querySelector(".prev").style.display = "block"
-        document.querySelector(".navigation-circles").style.left = "40%";
+        document.querySelector(".navigation-circles").style.left = "50%";
 
     } 
 }
@@ -82,7 +86,7 @@ const clickCheck = (e) => {
     }  else{
         value = 6*width
     }
-    move(value, trailValue)
+    move(value)
 
 
 }
@@ -95,7 +99,7 @@ function open_close_nav(){
         //hamburger animation
         document.querySelector(".top").style.transform = ("rotate(39.55deg)")
         document.querySelector(".middle").style.opacity = "0"
-        document.querySelector(".bottom").style.transform = ("rotate(-38deg)")
+        document.querySelector(".bottom").style.transform = ("rotate(-39.55deg)")
         //side menu width
         document.querySelector(".sidenav").style.width = "5.9vw"
         document.querySelector(".sidenav-content").style.display = "flex"
@@ -119,15 +123,15 @@ document.querySelector(".join-btn").onclick = function(){slide("increase")}
 
 function trailAnimation(){
     trail.forEach(restart => {restart.style.backgroundColor = "#EBEBEB"})
-    if (value === width){
+    if (value.toFixed(4) == width){
         trail[0].style.backgroundColor = "#F56529"
-    }else if (value === 2*width){
+    }else if (value.toFixed(4) == 2*width){
         trail[1].style.backgroundColor = "#FAE340"
-    }else if (value === 3*width){
+    }else if (value.toFixed(4) == 3*width){
         trail[2].style.backgroundColor = "#00F9FF"
-    }else if (value === 4*width){
+    }else if (value.toFixed(4) == 4*width){
         trail[3].style.backgroundColor = "#232D95" 
-    }else if (value === 5*width){
+    }else if (value.toFixed(4) == 5*width){
         trail[4].style.backgroundColor = "#C4C4C4"
     }else{
         trail[5].style.backgroundColor = "#000000"
